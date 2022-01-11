@@ -5,8 +5,17 @@
 
       <hr/>
 
+      <div class="columns">
 
-      testing
+        <div class="column is-4">
+
+          Testing
+
+
+        </div>
+
+
+      </div>
 
     </div>
 
