@@ -13,7 +13,7 @@
     "sass-loader": "^12.4.0"
   },
   "dependencies": {
-    "@oruga-ui/oruga-next": "^0.4.8",
+    "@oruga-ui/oruga-next": "^0.5.2",
     "@oruga-ui/theme-bulma": "^0.1.5",
     "nuxi": "^0.10.1"
   }

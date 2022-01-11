@@ -4,3 +4,24 @@ node_modules
 nuxt.d.ts
 .output
 .env
+
+/.git/
+/.idea/
+/node_modules
+/public/hot
+
+
+##### Laravel Ignore Files
+composer.lock
+package-lock.json
+
+##### End of Laravel Ignore Files
+
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+
+yarn.lock
+
+*.zip
