@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
     css: [
         // SCSS file in the project
-        '@/assets/scss/build.scss',
+        //'@/assets/scss/build.scss',
         //'@/assets/scss/bulma.scss',
         //'@/assets/scss/oruga.scss',
         //'@oruga-ui/oruga-next/src/scss/oruga-full-vars.scss',
