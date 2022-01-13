@@ -9,9 +9,8 @@
 
         <div class="column is-4">
 
-          Testing ===
+          <o-button>Button</o-button>
 
-          {{state}}
 
 
         </div>
@@ -27,13 +26,11 @@
 </template>
 <script>
 
-const state = useStore();
 
 export default {
   layout: "default",
   data() {
     return {
-      state: state
     }
   },
 };
