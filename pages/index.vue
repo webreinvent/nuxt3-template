@@ -3,13 +3,15 @@
 
     <div class="container">
 
-      <hr/>
+
 
       <div class="columns">
 
         <div class="column is-4">
 
-          Testing
+          Testing ===
+
+          {{state}}
 
 
         </div>
@@ -23,3 +25,16 @@
 
   </div>
 </template>
+<script>
+
+const state = useStore();
+
+export default {
+  layout: "default",
+  data() {
+    return {
+      state: state
+    }
+  },
+};
+</script>

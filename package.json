@@ -9,7 +9,9 @@
   "dependencies": {
     "@oruga-ui/oruga-next": "^0.5.2",
     "@oruga-ui/theme-bulma": "^0.1.5",
-    "nuxi": "^0.10.1"
+    "@pinia/nuxt": "^0.1.8",
+    "nuxi": "^0.10.1",
+    "pinia": "^2.0.9"
   },
   "devDependencies": {
     "node-sass": "^7.0.1",
@@ -21,5 +23,4 @@
   "resolutions": {
     "resolve": "1.20.0"
   }
-
 }

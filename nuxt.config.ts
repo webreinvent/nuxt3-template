@@ -11,5 +11,18 @@ export default defineNuxtConfig({
         //'@oruga-ui/oruga-next/src/scss/oruga-full-vars.scss',
         //'@oruga-ui/theme-bulma/dist/bulma.css',
     ],
+    meta: {
+
+        link: [
+            // <link rel="stylesheet" href="https://myawesome-lib.css">
+            {
+                rel: 'stylesheet',
+                href: 'https://fonts.googleapis.com/css?family=Lato:400,700'
+            }
+        ],
+    },
+    buildModules: [
+        '@pinia/nuxt',
+    ],
 
 })
