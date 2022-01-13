@@ -3,7 +3,7 @@ import { defineNuxtConfig } from 'nuxt3'
 export default defineNuxtConfig({
 
     css: [
-        //'@/assets/scss/build.scss',
+        '@/assets/scss/build.scss',
     ],
     meta: {
         link: [
