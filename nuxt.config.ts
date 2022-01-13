@@ -13,8 +13,8 @@ export default defineNuxtConfig({
             }
         ],
     },
-    /*build: {
+    build: {
         transpile: [/oruga/]
-    }*/
+    }
 
 })
