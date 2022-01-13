@@ -11,7 +11,6 @@
 
           Testing ===
 
-          {{state}}
 
 
         </div>
@@ -27,13 +26,11 @@
 </template>
 <script>
 
-const state = useStore();
 
 export default {
   layout: "default",
   data() {
     return {
-      state: state
     }
   },
 };
