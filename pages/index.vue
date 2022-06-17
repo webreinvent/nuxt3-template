@@ -1,11 +1,37 @@
-<script setup>
+<script >
 
-const foo = useFoo()
+import { toRefs, reactive, defineComponent } from "vue";
 
+/*
 const { data } = await useFetch('https://reqres.in/api/users?page=2');
 
 console.log('--->', data);
+*/
 
+
+export default defineComponent({
+  setup: () => {
+    const state = reactive({
+      counter: 0,
+    });
+
+    const increaseCount = () => {
+      state.counter++;
+    };
+
+
+/*
+    const root = useRoot()
+
+*/
+
+
+
+
+
+    return { ...toRefs(state), increaseCount };
+  },
+});
 
 
 </script>
@@ -42,7 +68,15 @@ console.log('--->', data);
 
 
       <div class="column is-12">
-        <pre>{{foo}}</pre>
+
+        <o-button @click="increaseCount">Counter</o-button>
+
+        {{counter}}
+
+        <pre>{{root}}</pre>
+
+
+
       </div>
 
 

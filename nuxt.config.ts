@@ -21,7 +21,7 @@ switch (params.env)
 export default defineNuxtConfig({
 
     css: [
-        //'@/assets/scss/build.scss',
+        '@/assets/scss/build.scss',
     ],
     meta: {
         link: [
