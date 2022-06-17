@@ -1,9 +1,27 @@
-import { defineNuxtConfig } from 'nuxt3'
+import { defineNuxtConfig } from 'nuxt'
+
+const params = require('./env');
+let config ={
+    build: []
+};
+
+switch (params.env)
+{
+    case 'pradeep':
+        config.build = [];
+        break;
+
+    case 'production':
+        config.build = [/oruga/];
+        break;
+
+}
+
 
 export default defineNuxtConfig({
 
     css: [
-        '@/assets/scss/build.scss',
+        //'@/assets/scss/build.scss',
     ],
     meta: {
         link: [
@@ -13,8 +31,20 @@ export default defineNuxtConfig({
             }
         ],
     },
+    content: {
+        highlight: {
+            // Theme used in all color schemes.
+            theme: 'light-plus',
+        }
+    },
+    components: [
+        '~/components/content'
+    ],
+    modules: [
+        '@nuxt/content'
+    ],
     build: {
-        transpile: [/oruga/]
+        transpile: config.build
     }
 
 })
