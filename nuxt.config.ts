@@ -1,5 +1,3 @@
-import { defineNuxtConfig } from 'nuxt'
-
 const params = require('./env');
 let config ={
     build: []
